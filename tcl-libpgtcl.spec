@@ -22,7 +22,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Tcl interface for PostgreSQL.
 
 %description -l es
-Bibliotecas y shell Tcl para acceder un servidor PostgreSQL
+Bibliotecas y shell Tcl para acceder un servidor PostgreSQL.
 
 %description -l pl
 Interfejs Tcl dla PostgreSQL.

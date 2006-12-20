@@ -7,7 +7,7 @@ Summary(uk):	Б╕бл╕отеки для доступу до PostgreSQL з Tcl
 Summary(zh_CN):	р╩╦Ж Tcl ©Б╨м PostgreSQL ╣д PL/Tcl ╠ЮЁлсОят
 Name:		tcl-libpgtcl
 Version:	1.4
-Release:	1
+Release:	2
 License:	BSD
 Group:		Development/Languages/Tcl
 Source0:	ftp://gborg.postgresql.org/pub/pgtcl/stable/libpgtcl-%{version}.tar.gz

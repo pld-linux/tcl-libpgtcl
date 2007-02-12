@@ -1,10 +1,10 @@
 Summary:	Tcl interface for PostgreSQL
-Summary(es):	Bibliotecas y shell Tcl para acceder un servidor PostgreSQL
-Summary(pl):	Interfejs Tcl dla PostgreSQL
-Summary(pt_BR):	Bibliotecas e shell para programas em Tcl acessarem o servidor PostgreSQL
-Summary(ru):	Библиотеки для доступа к PostgreSQL из Tcl
-Summary(uk):	Б╕бл╕отеки для доступу до PostgreSQL з Tcl
-Summary(zh_CN):	р╩╦Ж Tcl ©Б╨м PostgreSQL ╣д PL/Tcl ╠ЮЁлсОят
+Summary(es.UTF-8):   Bibliotecas y shell Tcl para acceder un servidor PostgreSQL
+Summary(pl.UTF-8):   Interfejs Tcl dla PostgreSQL
+Summary(pt_BR.UTF-8):   Bibliotecas e shell para programas em Tcl acessarem o servidor PostgreSQL
+Summary(ru.UTF-8):   п▒п╦п╠п╩п╦п╬я┌п╣п╨п╦ п╢п╩я▐ п╢п╬я│я┌я┐п©п╟ п╨ PostgreSQL п╦п╥ Tcl
+Summary(uk.UTF-8):   п▒я√п╠п╩я√п╬я┌п╣п╨п╦ п╢п╩я▐ п╢п╬я│я┌я┐п©я┐ п╢п╬ PostgreSQL п╥ Tcl
+Summary(zh_CN.UTF-8):   Д╦─Д╦╙ Tcl Е╨⌠Е▓▄ PostgreSQL Г └ PL/Tcl Г╪√Г╗▀Х╞╜Х╗─
 Name:		tcl-libpgtcl
 Version:	1.4
 Release:	2
@@ -21,27 +21,27 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Tcl interface for PostgreSQL.
 
-%description -l es
+%description -l es.UTF-8
 Bibliotecas y shell Tcl para acceder un servidor PostgreSQL.
 
-%description -l pl
+%description -l pl.UTF-8
 Interfejs Tcl dla PostgreSQL.
 
-%description -l pt_BR
+%description -l pt_BR.UTF-8
 Bibliotecas e shell para programas em Tcl acessarem o servidor
 PostgreSQL.
 
-%description -l ru
-libpgtcl - API для доступа к базе данных PostgreSQL из языка Tcl.
+%description -l ru.UTF-8
+libpgtcl - API п╢п╩я▐ п╢п╬я│я┌я┐п©п╟ п╨ п╠п╟п╥п╣ п╢п╟п╫п╫я▀я┘ PostgreSQL п╦п╥ я▐п╥я▀п╨п╟ Tcl.
 
-%description -l uk
-libpgtcl - API для доступу до бази даних PostgreSQL з мови Tcl.
+%description -l uk.UTF-8
+libpgtcl - API п╢п╩я▐ п╢п╬я│я┌я┐п©я┐ п╢п╬ п╠п╟п╥п╦ п╢п╟п╫п╦я┘ PostgreSQL п╥ п╪п╬п╡п╦ Tcl.
 
 %package devel
 Summary:	Development part of Tcl interface for PostgreSQL
-Summary(pl):	CzЙ╤Ф dla programistСw interfejsu Tcl dla PostgreSQL
-Summary(ru):	Хедеры и библиотеки для разработок с использованием libpgtcl (Tcl интерфейс для PostgreSQL)
-Summary(uk):	Хедери та б╕бл╕отеки для розробок з використанням libpgtcl (Tcl-╕нтерфейс для PostgreSQL)
+Summary(pl.UTF-8):   Czд≥е⌡д┤ dla programistцЁw interfejsu Tcl dla PostgreSQL
+Summary(ru.UTF-8):   п╔п╣п╢п╣я─я▀ п╦ п╠п╦п╠п╩п╦п╬я┌п╣п╨п╦ п╢п╩я▐ я─п╟п╥я─п╟п╠п╬я┌п╬п╨ я│ п╦я│п©п╬п╩я▄п╥п╬п╡п╟п╫п╦п╣п╪ libpgtcl (Tcl п╦п╫я┌п╣я─я└п╣п╧я│ п╢п╩я▐ PostgreSQL)
+Summary(uk.UTF-8):   п╔п╣п╢п╣я─п╦ я┌п╟ п╠я√п╠п╩я√п╬я┌п╣п╨п╦ п╢п╩я▐ я─п╬п╥я─п╬п╠п╬п╨ п╥ п╡п╦п╨п╬я─п╦я│я┌п╟п╫п╫я▐п╪ libpgtcl (Tcl-я√п╫я┌п╣я─я└п╣п╧я│ п╢п╩я▐ PostgreSQL)
 Group:		Development/Languages/Tcl
 Requires:	%{name} = %{version}-%{release}
 Requires:	postgresql-devel
@@ -51,18 +51,18 @@ Obsoletes:	postgresql-tcl-static
 %description devel
 Development part of Tcl interface for PostgreSQL.
 
-%description devel -l pl
-CzЙ╤Ф interfejsu Tcl dla PostgreSQL przeznaczona dla programistСw.
+%description devel -l pl.UTF-8
+Czд≥е⌡д┤ interfejsu Tcl dla PostgreSQL przeznaczona dla programistцЁw.
 
-%description devel -l ru
-Это пакет разработчика для программирования с libpgtcl. Он включает
-хедеры и библиотеки для использования в программах, которые используют
-код или API libtcl (Tcl интерфейс для PostgreSQL).
+%description devel -l ru.UTF-8
+п╜я┌п╬ п©п╟п╨п╣я┌ я─п╟п╥я─п╟п╠п╬я┌я┤п╦п╨п╟ п╢п╩я▐ п©я─п╬пЁя─п╟п╪п╪п╦я─п╬п╡п╟п╫п╦я▐ я│ libpgtcl. п·п╫ п╡п╨п╩я▌я┤п╟п╣я┌
+я┘п╣п╢п╣я─я▀ п╦ п╠п╦п╠п╩п╦п╬я┌п╣п╨п╦ п╢п╩я▐ п╦я│п©п╬п╩я▄п╥п╬п╡п╟п╫п╦я▐ п╡ п©я─п╬пЁя─п╟п╪п╪п╟я┘, п╨п╬я┌п╬я─я▀п╣ п╦я│п©п╬п╩я▄п╥я┐я▌я┌
+п╨п╬п╢ п╦п╩п╦ API libtcl (Tcl п╦п╫я┌п╣я─я└п╣п╧я│ п╢п╩я▐ PostgreSQL).
 
-%description devel -l uk
-Це пакет програм╕ста для програмування з libpgtcl. В╕н м╕стить хедери
-та б╕бл╕отеки для використання в програмах, як╕ використовують код або
-API libtcl (Tcl-╕нтерфейсу для PostgreSQL).
+%description devel -l uk.UTF-8
+п╕п╣ п©п╟п╨п╣я┌ п©я─п╬пЁя─п╟п╪я√я│я┌п╟ п╢п╩я▐ п©я─п╬пЁя─п╟п╪я┐п╡п╟п╫п╫я▐ п╥ libpgtcl. п▓я√п╫ п╪я√я│я┌п╦я┌я▄ я┘п╣п╢п╣я─п╦
+я┌п╟ п╠я√п╠п╩я√п╬я┌п╣п╨п╦ п╢п╩я▐ п╡п╦п╨п╬я─п╦я│я┌п╟п╫п╫я▐ п╡ п©я─п╬пЁя─п╟п╪п╟я┘, я▐п╨я√ п╡п╦п╨п╬я─п╦я│я┌п╬п╡я┐я▌я┌я▄ п╨п╬п╢ п╟п╠п╬
+API libtcl (Tcl-я√п╫я┌п╣я─я└п╣п╧я│я┐ п╢п╩я▐ PostgreSQL).
 
 %prep
 %setup -q -n libpgtcl

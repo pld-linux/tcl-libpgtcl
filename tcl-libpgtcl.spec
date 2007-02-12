@@ -1,10 +1,10 @@
 Summary:	Tcl interface for PostgreSQL
-Summary(es.UTF-8):   Bibliotecas y shell Tcl para acceder un servidor PostgreSQL
-Summary(pl.UTF-8):   Interfejs Tcl dla PostgreSQL
-Summary(pt_BR.UTF-8):   Bibliotecas e shell para programas em Tcl acessarem o servidor PostgreSQL
-Summary(ru.UTF-8):   Библиотеки для доступа к PostgreSQL из Tcl
-Summary(uk.UTF-8):   Бібліотеки для доступу до PostgreSQL з Tcl
-Summary(zh_CN.UTF-8):   一个 Tcl 库和 PostgreSQL 的 PL/Tcl 编程语言
+Summary(es.UTF-8):	Bibliotecas y shell Tcl para acceder un servidor PostgreSQL
+Summary(pl.UTF-8):	Interfejs Tcl dla PostgreSQL
+Summary(pt_BR.UTF-8):	Bibliotecas e shell para programas em Tcl acessarem o servidor PostgreSQL
+Summary(ru.UTF-8):	Библиотеки для доступа к PostgreSQL из Tcl
+Summary(uk.UTF-8):	Бібліотеки для доступу до PostgreSQL з Tcl
+Summary(zh_CN.UTF-8):	一个 Tcl 库和 PostgreSQL 的 PL/Tcl 编程语言
 Name:		tcl-libpgtcl
 Version:	1.4
 Release:	2
@@ -39,9 +39,9 @@ libpgtcl - API для доступу до бази даних PostgreSQL з мо
 
 %package devel
 Summary:	Development part of Tcl interface for PostgreSQL
-Summary(pl.UTF-8):   Część dla programistów interfejsu Tcl dla PostgreSQL
-Summary(ru.UTF-8):   Хедеры и библиотеки для разработок с использованием libpgtcl (Tcl интерфейс для PostgreSQL)
-Summary(uk.UTF-8):   Хедери та бібліотеки для розробок з використанням libpgtcl (Tcl-інтерфейс для PostgreSQL)
+Summary(pl.UTF-8):	Część dla programistów interfejsu Tcl dla PostgreSQL
+Summary(ru.UTF-8):	Хедеры и библиотеки для разработок с использованием libpgtcl (Tcl интерфейс для PostgreSQL)
+Summary(uk.UTF-8):	Хедери та бібліотеки для розробок з використанням libpgtcl (Tcl-інтерфейс для PostgreSQL)
 Group:		Development/Languages/Tcl
 Requires:	%{name} = %{version}-%{release}
 Requires:	postgresql-devel

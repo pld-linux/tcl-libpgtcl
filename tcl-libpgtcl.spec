@@ -13,6 +13,7 @@ Group:		Development/Languages/Tcl
 Source0:	http://pgfoundry.org/frs/download.php/338/pgtcl%{version}.tar.gz
 # Source0-md5:	6eed1c338fc3bb7a844797c92b79b936
 URL:		http://pgfoundry.org/projects/pgtcl/
+Provides:	tcl(Pgtcl)
 BuildRequires:	postgresql-devel
 BuildRequires:	tcl-devel >= 8
 Obsoletes:	postgresql-tcl

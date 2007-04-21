@@ -6,13 +6,13 @@ Summary(ru.UTF-8):	Библиотеки для доступа к PostgreSQL из
 Summary(uk.UTF-8):	Бібліотеки для доступу до PostgreSQL з Tcl
 Summary(zh_CN.UTF-8):	一个 Tcl 库和 PostgreSQL 的 PL/Tcl 编程语言
 Name:		tcl-libpgtcl
-Version:	1.4
-Release:	2
+Version:	1.5
+Release:	1
 License:	BSD
 Group:		Development/Languages/Tcl
-Source0:	ftp://gborg.postgresql.org/pub/pgtcl/stable/libpgtcl-%{version}.tar.gz
-# Source0-md5:	6666ab358f2b8ae822dafff29c7dd1d7
-URL:		http://gborg.postgresql.org/project/pgtcl/projdisplay.php
+Source0:	http://pgfoundry.org/frs/download.php/338/pgtcl%{version}.tar.gz
+# Source0-md5:	6eed1c338fc3bb7a844797c92b79b936
+URL:		http://pgfoundry.org/projects/pgtcl/
 BuildRequires:	postgresql-devel
 BuildRequires:	tcl-devel >= 8
 Obsoletes:	postgresql-tcl
@@ -65,9 +65,7 @@ Część interfejsu Tcl dla PostgreSQL przeznaczona dla programistów.
 API libtcl (Tcl-інтерфейсу для PostgreSQL).
 
 %prep
-%setup -q -n libpgtcl
-
-find . -type d -name CVS | xargs rm -rf 
+%setup -q -n pgtcl%{version}
 
 # workaround for broken make install
 touch doc/fake.n
@@ -90,11 +88,11 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc ChangeLog README README.async TODO
-%dir %{_libdir}/pgtcl1.4
-%attr(755,root,root) %{_libdir}/pgtcl1.4/libpgtcl1.4.so
-%{_libdir}/pgtcl1.4/pkgIndex.tcl
+%dir %{_libdir}/pgtcl%{version}
+%attr(755,root,root) %{_libdir}/pgtcl%{version}/libpgtcl%{version}.so
+%{_libdir}/pgtcl%{version}/*.tcl
 
 %files devel
 %defattr(644,root,root,755)
-%doc doc/{NEW-COMMANDS,PGTCL-NOTES,libpgtcl.pdf} doc/html
+%doc doc/{PGTCL-NOTES,libpgtcl.pdf} doc/html
 %{_includedir}/libpgtcl.h

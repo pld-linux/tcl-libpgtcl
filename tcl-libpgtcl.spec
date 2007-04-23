@@ -72,10 +72,9 @@ API libtcl (Tcl-інтерфейсу для PostgreSQL).
 touch doc/fake.n
 
 %build
-%configure2_13
+%configure
 
-%{__make} \
-	CFLAGS_OPTIMIZE="%{rpmcflags} -D__NO_STRING_INLINES -D__NO_MATH_INLINES"
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
